@@ -1,4 +1,4 @@
-let optionsButtons = document.querySelectorAll(".option-button");
+let optionsButtons = document.querySelectorAll(".option-button");//Event Listeners
 let advancedOptionButton = document.querySelectorAll(".adv-option-button");
 let fontName = document.getElementById("fontName");
 let fontSizeRef = document.getElementById("fontSize");
@@ -20,10 +20,38 @@ let fontList = [
   "cursive",
 ];
 
+//function for dark mode
+// const darkMode = () => {
+//   console.log("clicked");
+//   if( $( "body" ).hasClass( "dark" )) {
+//       $( "body" ).removeClass( "dark" );
+//       $( ".change" ).text( "OFF" );
+//   } else {
+//       $( "body" ).addClass( "dark" );
+//       $( ".change" ).text( "ON" );
+//   }
+// }
+// function myFunction() {
+//   var element = document.body;
+//   element.classList.toggle("dark-mode");
+// }
+// const dark = () => {
+  
+//   if( $( "body" ).hasClass( "dark" )) {
+//       $( "body" ).removeClass( "dark" );
+//       $( ".change" ).text( "OFF" );
+//   } else {
+//       $( "body" ).addClass( "dark" );
+//       $( ".change" ).text( "ON" );
+//   }
+// }
+
+// const theme_toggle = document.getElementsById('mode').addEventListener('click', darkMode);
+
 //Initial Settings
 const initializer = () => {
   //function calls for highlighting buttons
-  //No highlights for link, unlink,lists, undo,redo since they are one time operations
+  
   highlighter(alignButtons, true);
   highlighter(spacingButtons, true);
   highlighter(formatButtons, false);
