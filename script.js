@@ -80,8 +80,8 @@ const initializer = () => {
 //main logic
 const modifyText = (command, defaultUi, value) => {
   //execCommand executes command on selected text
-  document.execCommand(command, defaultUi, value);
-};
+  document.execCommand(command, defaultUi, value);//defaultUi = false means it will not show the UI
+};//command specifes the command to be executed, defaultUi = false means it will not show the UI, value = value of the command
 
 //For basic operations which don't need value parameter
 optionsButtons.forEach((button) => {
